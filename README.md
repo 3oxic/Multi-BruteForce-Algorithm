@@ -1,8 +1,8 @@
-# CPP Multi-BruteForce-Algorithm
+# CPP Distributed Multi-BruteForce-Algorithm
 
-&nbsp; Parallel Brute Force Algorithm made in cpp. Implemented as master-slave model, in which a client  aconnects and sends the required info
+&nbsp; Distributed Brute Force Algorithm made in cpp. A client  connects and sends the required info
 (IP , PORT, USERNAME, PASSWORDLIST). When master receives this values from the client ,  he forwards to all the slaves the values IP , PORT, USERNAME.
-For each of the slaves, master makes a subset from the PASSWORDLIST and pass it to slave(let subset of PASSWORDLIST be PASSWORDLISTsubset). Each slave, open threads and sends a get request to IP PORT with the
+For each of the slaves, master makes a subset from the PASSWORDLIST and pass it to each slave(let subset of PASSWORDLIST be PASSWORDLISTsubset). Each slave, open threads and sends a get request to IP PORT with the
 username and a password from PASSWORDLISTsubset). Slave opens threads and tries passwords from the PASSWORDLISTsubset, until the PASSWORDLISTsubset have no more elements or the correct password is found.
 
 ## Getting Started[TODO]
